@@ -15,35 +15,4 @@
 @import url('./izi-toast.css');
 @import url('./gallery.css');
 @import url('./info.css');
-
-.loader {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-}
-
-body.loading .loader {
-  display: block;
-}
-
-.loader:after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 6px solid #ccc;
-  border-top-color: #ffbebe;
-  animation: spinner 1.2s linear infinite;
-}
-
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import url('./loader.css');
